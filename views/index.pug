@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= title
+  a(href="/new")="Go to form"
+  each message in messages 
+    div 
+      h1= message.user 
+      h4= message.text 
+      p= message.added
